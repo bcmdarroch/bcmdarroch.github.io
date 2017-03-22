@@ -16,7 +16,7 @@ html {
 /*general + body rules*/
 body {
   font-family: 'Cabin', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #09B3C4;
 }
 
@@ -58,8 +58,8 @@ nav h1 {
 }
 
 .prof {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 
