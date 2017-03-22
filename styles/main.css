@@ -1,0 +1,139 @@
+/* primary: #09B3C4 */
+/* secondary: #e7b43f */
+/* secondary: #d05664 */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Homemade+Apple');
+
+/* general element rules */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*general + body rules*/
+body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  color: #09B3C4;
+}
+
+h1 a, h2, h4 {
+  font-family: 'Homemade Apple', cursive;
+}
+
+a {
+  color: #09B3C4;
+  text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+  color: #e7b43f;
+}
+
+a:visited {
+  color: #d05664;
+}
+
+
+/*header rules*/
+header {
+  padding: 0 20%;
+  margin-bottom: 5%;
+}
+
+nav {
+  min-width: 1000px;
+}
+
+nav * {
+  display: inline;
+  text-align: center;
+}
+
+nav h1 {
+  padding: 0 2.5%;
+}
+
+.prof {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+
+/*main projects/posts page rules*/
+section.gallery, section.blog {
+  padding: 0 10%;
+  min-width: 1500px;
+}
+
+article.project, article.post {
+  display: inline-block;
+  width: 400px;
+  padding: 1% 2%;
+  vertical-align: text-top;
+  position: relative;
+}
+
+article.project p.desc,
+article.post p.desc {
+  display: none;
+}
+
+article.project img:hover + p.desc,
+article.project h3:hover + p.desc,
+article.project p.desc:hover,
+article.post img:hover + p.desc,
+article.post h3:hover + p.desc,
+article.post p.desc:hover {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+  padding: 1%;
+  position: absolute;
+  bottom: 1%;
+  width: 350px;
+}
+
+article.project img,
+article.post img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*main bio/contact/index page rules*/
+section.bio {
+  margin: 0 18%;
+  text-align: justify;
+}
+
+section.contact ul {
+  list-style: none;
+  padding-left: 40%;
+}
+
+section.contact li {
+  display: inline;
+  padding: 0 2%;
+}
+
+section.contact img {
+  width: 50px;
+}
+
+/*footer rules*/
+footer {
+  padding: 0 30%;
+  margin-top: 5%;
+}
+
+footer * {
+  display: inline;
+  padding: 0 1%;
+}
+
+footer img {
+  width: 50px;
+}
