@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cabin|Homemade+Apple');
 
+
 /* general element rules */
 html {
   box-sizing: border-box;
@@ -13,19 +14,20 @@ html {
   box-sizing: inherit;
 }
 
+
 /*general + body rules*/
 /*debugging*/
-body * {
+/*body * {
   border-style: solid;
   border-width: thin;
   border-color: hotpink;
-}
+}*/
 
 body {
   font-family: 'Cabin', sans-serif;
   font-size: 24px;
   color: #09B3C4;
-  margin: 5% 5%;
+  margin: 5% 2%;
 }
 
 h1 a, h2, h4 {
@@ -41,10 +43,6 @@ a:hover, a:visited:hover {
   color: #d05664;
 }
 
-/*a:visited {
-  color: #e7b43f;
-}*/
-
 
 /*header rules*/
 header {
@@ -58,17 +56,22 @@ nav {
 
 nav * {
   display: inline;
-  text-align: center;
 }
 
 nav h1 {
-  /*padding: 0 2.5%;*/
-  margin: 0 2.5%;
+  margin: 0 5%;
+  font-size: 100%;
+}
+
+nav h1:last-child {
+  padding: 0 2%;
 }
 
 .prof {
-  max-width: 300px;
-  max-height: 300px;
+  /*max-width: 300px;
+  max-height: 300px;*/
+  max-width: 30%;
+  max-height: 30%;
 }
 
 /*contact rules*/
@@ -76,7 +79,7 @@ section.contact ul {
   display: block;
   list-style: none;
   padding-left: 10%;
-  margin: 5% 30%;
+  margin: 5% 20%;
 }
 
 section.contact li {
@@ -95,54 +98,70 @@ section.contact img:hover {
   filter: alpha(opacity=80);
 }
 
+
 /*main projects/posts page rules*/
 section#gallery {
   width: 100%;
+  padding: 5% 10%;
   margin: 5% 5%;
 }
 
 article.project {
-  display: inline-block;
-  width: 500px;
-  height: 600px;
-  padding: 1% 2%;
-  vertical-align: text-top;
-  position: relative;
+  /*display: inline-block;*/
+  min-width: 500px;
+  min-height: 600px;
+  /*padding: 1% 2%;*/
+  /*vertical-align: text-top;*/
+  /*position: relative;*/
+}
+
+article.project * {
+  margin: auto;
+  /*text-align: center;*/
+  padding: 0 10%;
 }
 
 article.project p.desc {
   display: none;
 }
 
+article.project h3 {
+  /*text-align: center;*/
+}
+
 article.project img:hover + p.desc,
 article.project h3:hover + p.desc,
 article.project p.desc:hover {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5%;
+  /*background: rgba(0, 0, 0, 0.6);*/
   text-align: justify;
-  padding: 1%;
+  width: 80%;
+  /*padding: 1%;*/
   /*position: absolute;
   bottom: 1%;
   width: 350px;*/
 }
 
 article.project img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
-section#bio {
-  margin: 0 18%;
+section#about {
+  margin: 20% 20% 10% 20%;
+}
+
+section#about p {
   text-align: justify;
 }
-
 
 /*footer rules*/
 footer {
   /*padding: 0 30%;*/
-  margin: 10% 38%;
+  margin: 10% 20%;
 }
 
-footer h6 {
+footer h6, footer h4 {
   text-align: center;
 }
