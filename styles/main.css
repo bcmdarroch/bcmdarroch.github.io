@@ -15,11 +15,11 @@ html {
 
 /*general + body rules*/
 /*debugging*/
-/*body * {
+body * {
   border-style: solid;
   border-width: thin;
   border-color: hotpink;
-}*/
+}
 
 body {
   font-family: 'Cabin', sans-serif;
@@ -96,13 +96,8 @@ section.contact img:hover {
 }
 
 /*main projects/posts page rules*/
-section.gallery {
+section#gallery {
   width: 100%;
-}
-
-section.gallery {
-  /*padding: 0 10%;
-  min-width: 1500px;*/
   margin: 5% 5%;
 }
 
@@ -136,7 +131,7 @@ article.project img {
   max-height: 500px;
 }
 
-section.bio {
+section#bio {
   margin: 0 18%;
   text-align: justify;
 }
@@ -148,11 +143,6 @@ footer {
   margin: 10% 38%;
 }
 
-footer * {
-  display: inline;
-  padding: 0 1%;
-}
-
-footer img {
-  width: 50px;
+footer h6 {
+  text-align: center;
 }
