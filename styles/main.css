@@ -136,6 +136,10 @@ section#about p {
   text-align: justify;
 }
 
+section#about p.links {
+  text-align: center;
+}
+
 /*footer rules*/
 footer {
   margin: 10% 20%;
